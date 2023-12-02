@@ -49,7 +49,7 @@ operations.forEach(function(operation) {
                 }
                 secondNumber = '';
                 display.textContent = firstNumber;
-                mode = isNaN(firstNumber) ? 'error' :'secondNumber';
+                mode = isNaN(firstNumber) ? 'error' :'operation';
                 break;
             case 'operation':
             case 'error':
@@ -75,7 +75,6 @@ equal.addEventListener('click', function(event) {
             break;
         case 'secondNumber':
             firstNumber = String(operate(firstNumber, secondNumber, operator));
-            console.log('hello');
             if(firstNumber.length > 9 && firstNumber.includes('.')) {
                 firstNumber = firstNumber.slice(0,9);
             }
