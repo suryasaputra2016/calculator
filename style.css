@@ -1,0 +1,86 @@
+:root {
+    --border-radius: 10px;
+    --margin-bottom: 16px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(26, 26, 26);
+}
+
+.calculator {
+    width: 250px;
+    margin: 10px auto;
+    background-color: rgb(210, 210, 210);
+    padding: 20px;
+    border-radius: var(--border-radius);
+}
+
+.display {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    background-color: rgb(77, 77, 77);
+    margin-bottom: var(--margin-bottom);
+    border-radius: var(--border-radius);
+    
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+
+    color: white;
+    font-family: monospace;;
+    font-size: 2.5em;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+}
+
+button {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+
+    width: 22%;
+    aspect-ratio: 1;
+    margin-bottom: var(--margin-bottom);
+    border-radius: var(--border-radius);
+    border: none;
+}
+
+.number {
+    background-color: rgb(0, 194, 0);
+}
+
+.number:active {
+    background-color: greenyellow;
+}
+
+.operation {
+    background-color: palevioletred;
+}
+
+.operation:active {
+    background-color: hotpink;
+}
+
+.special {
+    background-color: orange;
+}
+
+.special:active {
+    background-color: yellow;
+}
+
+.clear {
+    font-size: 1em;
+}
